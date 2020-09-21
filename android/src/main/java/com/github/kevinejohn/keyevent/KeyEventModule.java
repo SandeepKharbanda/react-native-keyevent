@@ -62,6 +62,13 @@ public class KeyEventModule extends ReactContextBaseJavaModule {
         mJSModule.emit("onKeyMultiple", getJsEventParams(keyCode, keyEvent, repeatCount));
     };
 
+    public boolean isColorKeyPress(int keyCode) {
+		if(keyCode == 183 || keyCode == 184 || keyCode == 185 || keyCode == 186 || keyCode == 4){
+			return true;
+		}
+		return false;
+	}
+
     protected KeyEventModule(ReactApplicationContext reactContext) {
         super(reactContext);
         mReactContext = reactContext;
