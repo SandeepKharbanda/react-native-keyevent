@@ -63,7 +63,7 @@ public class KeyEventModule extends ReactContextBaseJavaModule {
     };
 
     public boolean isColorKeyPress(int keyCode) {
-		if(keyCode == 183 || keyCode == 184 || keyCode == 185 || keyCode == 186 || keyCode == 4 || keyCode == 7 || keyCode == 166 || keyCode == 167){
+		if(keyCode == 183 || keyCode == 184 || keyCode == 185 || keyCode == 186 || keyCode == 4 || keyCode == 7 || keyCode == 166 || keyCode == 167 || keyCode == 82){
 			return true;
 		}
 		return false;
